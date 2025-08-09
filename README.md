@@ -1,15 +1,21 @@
-# AI-Based-Document-Q-A-System
+The AI-Powered Document Q&A System combines a modern Large Language Model (LLM) with a Retrieval-Augmented Generation (RAG) pipeline to deliver fast, accurate, and context-rich answers from your uploaded documents.
 
-This is an end-to-end Retrieval-Augmented Generation (RAG) system for document Q&A, combining the speed of the Groq API with the accuracy and contextual understanding of Google’s Gemma model.
+How it works:
 
-Features:
-Upload & Ingest Documents: Supports PDF and text formats.
+1) Document Ingestion — Upload your file (PDF, TXT, etc.), and the system extracts its text.
 
-Smart Chunking and Embedding: Splits documents into manageable segments and converts them into embeddings for efficient retrieval.
+2) Chunking & Embedding — The text is split into smaller chunks and converted into vector embeddings.
 
-Vector Indexing: Powered by FAISS for fast and scalable similarity search.
+3) Vector Search — A FAISS-powered semantic search retrieves only the most relevant chunks.
 
-Low-Latency Inference: Utilizes Groq’s ultra-fast inference engine for real-time responses.
+4) Answer Generation — The LLM processes your question and the retrieved context to produce a precise answer.
 
-Contextual Q&A with Gemma: Retrieves relevant chunks and generates accurate, context-aware answers using the Gemma model.
+Tech Stack:
+Language: Python 3.10+
+Framework: LangChain
+LLM: Llama3-8b-8192
+Embeddings: GoogleGenerativeAIEmbeddings
+Vector Store: FAISS
+Frontend:Streamlit
+Document Parsing: PyPDF2
 

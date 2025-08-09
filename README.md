@@ -11,11 +11,11 @@ How it works:
 4) Answer Generation — The LLM processes your question and the retrieved context to produce a precise answer.
 
 Tech Stack:
--Language: Python 3.10+
--Framework: LangChain
--LLM: Llama3-8b-8192
--Embeddings: GoogleGenerativeAIEmbeddings
--Vector Store: FAISS
--Frontend:Streamlit
--Document Parsing: PyPDF2
+Language: Python 3.10+
+Framework: LangChain
+LLM: Llama3-8b-8192
+Embeddings: GoogleGenerativeAIEmbeddings
+Vector Store: FAISS
+Frontend:Streamlit
+Document Parsing: PyPDF2
 
